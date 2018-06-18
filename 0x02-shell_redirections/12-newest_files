@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | grep ^- | head -10
+ls -lt | grep ^- | rev | cut -d ' ' | rev | head -10
