@@ -1,0 +1,2 @@
+#!/bin/bash
+tr 'a-z' ' ' | cut -d ' ' -f1 | tr -d '\n' | rev | rev

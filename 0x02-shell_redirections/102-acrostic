@@ -1,2 +1,0 @@
-#!/bin/bash
-tr 'a-z' -f1 | tr -d '\n' | rev | rev
