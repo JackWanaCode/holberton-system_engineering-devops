@@ -1,0 +1,2 @@
+#!/bin/bash
+grep -n [A-Za-z0-9] | grep "[13579]:" | cut -d: -f2
