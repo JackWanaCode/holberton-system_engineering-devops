@@ -1,4 +1,4 @@
-#0x04. Loops, conditions and parsing
+# 0x04. Loops, conditions and parsing
 
 ## Target
 
@@ -14,9 +14,9 @@
 
 - What are files and other comparison operators, and how to use them
 
-##Task
+## Task
 
-###0. Create a SSH RSA key pair
+### 0. Create a SSH RSA key pair
 
 Create a RSA key pair.
 
@@ -34,7 +34,7 @@ SSH and RSA keys will be covered in depth in a later project.
 
 File: 0-RSA_public_key.pub
 
-###1. For Holberton School loop
+### 1. For Holberton School loop
 
 Write a Bash script that displays Holberton School 10 times.
 
@@ -50,7 +50,7 @@ Note that:
 
 File: 1-for_holberton_school
 
-###2. While Holberton School loop
+### 2. While Holberton School loop
 
 Write a Bash script that displays Holberton School 10 times.
 
@@ -60,7 +60,7 @@ Requirements:
 
 File: 2-while_holberton_school
 
-###3. Until Holberton School loop
+### 3. Until Holberton School loop
 
 Write a Bash script that displays Holberton School 10 times.
 
@@ -70,7 +70,7 @@ Requirements:
 
 File: 3-until_holberton_school
 
-###4. If 9, say Hi!
+### 4. If 9, say Hi!
 
 Write a Bash script that displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line.
 
@@ -82,7 +82,7 @@ Requirements:
 
 File: 4-if_9_say_hi
 
-###5. 4 bad luck, 8 is your chance
+### 5. 4 bad luck, 8 is your chance
 
 Write a Bash script that loops from 1 to 10 and:
 
@@ -100,7 +100,7 @@ Requirements:
 
 File: 5-4_bad_luck_8_is_your_chance
 
-###6. Superstitious numbers
+### 6. Superstitious numbers
 Write a Bash script that displays numbers from 1 to 20 and:
 
 - displays bad luck from China for the 4th loop iteration
@@ -117,7 +117,7 @@ Requirements:
 
 File: 6-superstitious_numbers
 
-###7. Clock
+### 7. Clock
 
 Write a Bash script that displays the time for 12 hours and 59 minutes:
 
@@ -133,7 +133,7 @@ Requirements:
 
 File: 7-clock
 
-###8. For ls
+### 8. For ls
 
 Write a Bash script that displays:
 
@@ -151,7 +151,7 @@ Requirements:
 
 File: 8-for_ls
 
-###9. To file, or not to file
+### 9. To file, or not to file
 
 Write a Bash script that gives you information about the holbertonschool file.
 
@@ -177,7 +177,7 @@ Requirements:
 
 File: 9-to_file_or_not_to_file
 
-###10. FizzBuzz
+### 10. FizzBuzz
 
 Write a Bash script that displays numbers from 1 to 100.
 
