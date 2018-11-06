@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Write a Bash script that terminate(kill) a process
+# shellcheck disable=SC2046
+kill $(pgrep -f '4-to_infinity_and_beyond')
