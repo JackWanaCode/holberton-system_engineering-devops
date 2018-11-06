@@ -2,4 +2,5 @@
 #Write a Bash script that displays lines containing the bash word.
 while true; do
 echo "To infinity and beyond"
+sleep 2
 done
