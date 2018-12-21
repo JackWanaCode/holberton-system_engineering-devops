@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # transfers a file from our client to a server
-redirection="location \/redirect_me \{\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t\}"
-filename="/etc/nginx/sites-enabled/default"
-sudo sed -i '/^\tserver_name localhost;/a\\n\t'"$redirection"'' $filename
-sudo service nginx restart
+sudo sed -i "/^\tserver_name localhost;/a location \/redirect_me \{\n\t\treturn 301 https://www.youtube.com/watch?v=$GUlwu4;\n\t\}" /etc/nginx/sites-available/default
+sudo service nginx reload
