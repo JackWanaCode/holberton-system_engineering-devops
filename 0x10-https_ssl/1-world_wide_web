@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#write a Bash script that will display information about subdomains
+declare -a arr=("www" "lb-01" "web-01" "web-02")
+if [ "$2" ]; then
+    ip=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | awk '{print $5}')
+    record=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | awk '{print $4}')
+    echo "The Subdomain "$2" is"$record" record and points to"$ip""
+else
+    for i in "${arr[@]}"; do
+	ip=$(dig "$i"."$1" | grep -A1 'ANSWER SECTION:' | awk '{print $5}')
+	record=$(dig "$i"."$1" | grep -A1 'ANSWER SECTION:' | awk '{print $4}')
+    echo "The Subdomain "$i" is"$record" record and points to"$ip""
+    done
+fi
