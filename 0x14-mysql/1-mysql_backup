@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# dump the databases and zip for archive
+mysqldump -uroot -p"$1" --events --opt --all-databases > backup.sql
+tar -cvzf "$(date '+%d-%m-%Y').tar.gz" backup.sql
