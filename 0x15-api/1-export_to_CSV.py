@@ -13,7 +13,7 @@ if __name__ == "__main__":
     r = requests.get('https://jsonplaceholder.typicode.com/todos',
                      params={'userId': argv[1]})
     filename = argv[1]+".csv"
-    username = name.json()[0].get('name')
+    username = name.json()[0].get('username')
     with open(filename, mode='w') as file:
         name_writer = csv.writer(file, delimiter=',', quotechar='"',
                                  quoting=csv.QUOTE_ALL)
