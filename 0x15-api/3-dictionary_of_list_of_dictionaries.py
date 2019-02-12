@@ -15,7 +15,7 @@ if __name__ == "__main__":
         username = name.get('username')
         dic[user_id] = []
         r = requests.get('https://jsonplaceholder.typicode.com/todos',
-                          params={'userId': user_id})
+                         params={'userId': user_id})
         for task in r.json():
             temp_dic = {"task": task.get('title'), "completed":
                         task.get("completed"), "username": username}
