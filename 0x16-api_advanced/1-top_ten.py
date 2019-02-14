@@ -1,21 +1,20 @@
 #!/usr/bin/python3
-"""Write a function that queries the Reddit API and returns the
-number of subscribers (not active users, total subscribers)
-for a given subreddit
+"""function that queries the Reddit API and prints the titles of the
+first 10 hot posts listed for a given subreddit
 """
 import requests
 
 
 def top_ten(subreddit):
-    """return number of subcribers"""
-    r = requests.get('https://www.reddit.com/r/{}/about.json'.
+    """ prints the titles of the first 10 hot posts listed"""
+    r = requests.get('https://www.reddit.com/r/{}/hot.json'.
                      format(subreddit),
-                     headers={'User-agent': 'my-integration/1, 2, 3'},
+                     headers={'User-agent': 'jack'},
+                     params={'limit': 10},
                      allow_redirects=False)
-    print(r.json()['kind'])
     try:
-        val = r.json()['data']['subscribers']
+        val = r.json()['data']['children']
+        for item in val:
+            print(item['data']['title'])
     except:
-        val = 0
-    print(val)
-    return val
+        print ("None")
