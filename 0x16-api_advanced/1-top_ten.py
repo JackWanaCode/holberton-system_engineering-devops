@@ -9,7 +9,7 @@ def top_ten(subreddit):
     """ prints the titles of the first 10 hot posts listed"""
     r = requests.get('https://www.reddit.com/r/{}/hot.json'.
                      format(subreddit),
-                     headers={'User-agent': 'jack'},
+                     headers={'User-Agent': 'jack'},
                      params={'limit': 10},
                      allow_redirects=False)
     try:
