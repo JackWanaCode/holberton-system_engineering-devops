@@ -12,5 +12,8 @@ def number_of_subscribers(subreddit):
                      format(subreddit),
                      headers={'User-agent': 'my-integration/1'},
                      allow_redirects=False)
-    val = r.json()['data']['subscribers']
+    try:
+        val = r.json()['data']['subscribers']
+    except:
+        val = 0
     return val
