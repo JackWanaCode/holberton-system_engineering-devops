@@ -22,7 +22,7 @@ def count_words(subreddit, word_list, after=1, count=Counter()):
     try:
         val = r.json()['data']['children']
         for item in val:
-            count.update(item['data']['title'].split())
+            count.update(item['data']['title'].lower().split())
         after = r.json()['data']['after']
         if after is None:
             dic = {}
